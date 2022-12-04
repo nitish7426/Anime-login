@@ -1,0 +1,173 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;600;700;800;900&display=swap');
+
+/* for all */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Raleway', sans-serif;
+}
+
+/* variable */
+:root{
+    --grad: linear-gradient(45deg, #E58C8A,#EEC0C6);
+}
+/* body */
+body {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url("nezuko.jpg");
+    background-size: cover;
+    /* backdrop-filter: brightness(70%); */
+    background: linear-gradient();
+}
+/* form box */
+form {
+    height: auto;
+    width: 22rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    padding: 1rem;
+    border: none;
+    border-radius: 0.5rem;
+    background-color: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(5px);
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+}
+/* form heading */
+.formHeading {
+    text-align: center;
+    margin-bottom: 0.25rem;
+    color: white;
+    font-size: 2.5rem;
+    
+}
+/* form input input tag */
+.formInput {
+    padding-left: 1rem;
+    padding: 0.75rem;
+    background-color: rgba(0, 0, 0, 0.2);
+    outline: none;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    font-family: inherit;
+    font-weight: inherit;
+}
+/* input placeholder */
+.formInput::placeholder {
+    color: white;
+    text-transform: capitalize;
+}
+/* forget password and sign up */
+.formLinks {
+    display: flex;
+    justify-content: space-between;
+}
+/* sign up */
+.formLinks #signup {
+    font-size: 1.1rem;
+    text-transform: capitalize;
+    font-weight: bold;
+    transition: all 150ms ease-out;
+}
+/* sign up hover effect */
+.formLinks #signup:hover {
+    color: pink;
+    text-decoration: none;
+}
+/* form links forget password and sign up a tag */
+.formLinks a {
+    font-size: small;
+    color: white;
+    text-decoration: none;
+}
+/* form link ancher hover  */
+.formLinks a:hover {
+    text-decoration: underline;
+}
+/* login button  */
+.loginBtn {
+    padding: 0.75rem 0;
+    border-radius: 5px;
+    border: none;
+    color: white;
+    background-image: var(--grad);
+    font-size: 1.1rem;
+    font-weight: bold;
+    background-size: 150%;
+    cursor: pointer;
+    transition: all 100ms ease-in;
+}
+/* login button hover  */
+.loginBtn:hover {
+    transform: scale(98%);
+}
+/* devider  or and border*/
+.devider {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* margin: 0.25rem; */
+    user-select: none;
+}
+/* devider border */
+.devider .border {
+    height: 1.5px;
+    width: 100%;
+    background-color: white;
+    border-radius: 1px;
+}
+/* devider or  */
+.devider .or {
+    margin: 0 7px;
+    font-size: medium;
+    font-weight: 500;
+    color: white;
+    letter-spacing: 0.2mm;
+}
+/* links google and facebook */
+.links {
+    display: flex;
+    width: 100%;
+    gap: 1rem;
+    margin-bottom: 0.75rem;
+}
+/* links a tag */
+.links a {
+    width: 50%;
+}
+/* google and facebook link */
+.google,
+.facebook {
+    padding: 0.75rem;
+    font-weight: bold;
+    width: 100%;
+    text-transform: capitalize;
+    border-radius: 5px;
+    border: none;
+    background-color: white;
+    transition: color 150ms ease;
+}
+/* hover effects links  */
+.google:hover {
+    color: rgb(255, 38, 0);
+}
+
+.facebook:hover {
+    color: rgb(0, 153, 255);
+}
+/* icon */
+.links a button i {
+    margin: 5px;
+    font-size: 1rem;
+}
+/* medie for small screen  */
+@media screen and (max-width:600px) {
+    body {
+        background-position: center center;
+    }
+}
